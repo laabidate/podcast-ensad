@@ -1,0 +1,665 @@
+{
+  "institution": {
+    "name": "ENSAD Mohammedia",
+    "full_name": "École Nationale Supérieure d'Art et de Design",
+    "university": "Université Hassan II de Casablanca",
+    "program": "Cycle Bac+5 (DENSAD) — Semestre 2",
+    "departments": [
+      "Design Graphique et Interactif (DGI)",
+      "Game Design et Animation (GDA)"
+    ],
+    "supervision": "Madame Randa El Amraoui (Module de Français)",
+    "banner_image": "assets/images/HeaderBG.png",
+    "intro": "Bienvenue sur notre espace dédié aux podcasts créés par les étudiants de l'ENSAD ! Nous sommes en deuxième semestre du cycle Bac+5 (DENSAD), en Design Graphique et Interactif (DGI) et en Game Design et Animation (GDA). Dans le cadre du module de français, sous l'encadrement de Madame Randa El Amraoui, nous avons exploré des sujets qui nous passionnent : l'art, le design, les jeux vidéo, la technologie… et bien plus encore ! Bonne écoute !"
+  },
+  "podcasts": [
+    {
+      "id": 1,
+      "title": "Provoc'Art",
+      "hosts": "Aya Moussa, Nada Yebda, Abdenasser Erraji",
+      "category": "Art & Performance",
+      "department": "Design Graphique et Interactif (DGI)",
+      "cover": "assets/images/pod1.jpg",
+      "description": "Exploration des performances artistiques extrêmes qui repoussent les limites de l'art, du corps et de la société.",
+      "episodes_count": 1,
+      "followers": "2.4K"
+    },
+    {
+      "id": 2,
+      "title": "Art.exe",
+      "hosts": "Nouhaila Yahyaoui, Lamyae Chaibate, Imane Charki, Islame Saadaoui, Rihab Benchekroun",
+      "category": "IA & Création",
+      "department": "Design Graphique et Interactif (DGI)",
+      "cover": "assets/images/pod2.jpg",
+      "description": "Le podcast qui explore les liens et tensions contemporaines entre l'intelligence artificielle et la création artistique.",
+      "episodes_count": 1,
+      "followers": "3.8K"
+    },
+    {
+      "id": 3,
+      "title": "CTRL+Z",
+      "hosts": "Asmae Badaoui, Kenza Mohcine, Manar Jebylou, Hamza Jabri, Islam Moutib",
+      "category": "Orientation & Vie Étudiante",
+      "department": "Design Graphique et Interactif (DGI)",
+      "cover": "assets/images/pod3.png",
+      "description": "Débat sans filtre sur la vie après le bac au Maroc : orientation, réorientation, indépendance et insertion professionnelle.",
+      "episodes_count": 1,
+      "followers": "4.1K"
+    },
+    {
+      "id": 4,
+      "title": "Design & Métier",
+      "hosts": "Somayya Sgrat, Walid Zyati, Edem Stephane Teteh, Rania El Aissati, Ibrahim Khafifi",
+      "category": "Design Graphique",
+      "department": "Design Graphique et Interactif (DGI)",
+      "cover": "assets/images/pod4.jpeg",
+      "description": "Plongée dans les réalités du métier de designer graphique au Maroc, de la formation à l'ENSAD au freelance et à l'entreprise.",
+      "episodes_count": 1,
+      "followers": "5.2K"
+    },
+    {
+      "id": 5,
+      "title": "Artefactum",
+      "hosts": "Amina El Baz, Israe El Fil, Housna Tijani, Aicha Kharchy",
+      "category": "Art Contemporain & Culture",
+      "department": "Design Graphique et Interactif (DGI)",
+      "cover": "assets/images/pod5.png",
+      "description": "Questionnement critique sur les formes d'art alternatives et contemporaines, leurs origines culturelles et leur réception.",
+      "episodes_count": 1,
+      "followers": "2.9K"
+    },
+    {
+      "id": 6,
+      "title": "Débat d'Art",
+      "hosts": "Soufiane Oumbarek, Walid Ouazzani Chahdi, Badr Eddine Ibnelghaly",
+      "category": "Art Contemporain",
+      "department": "Design Graphique et Interactif (DGI)",
+      "cover": "assets/images/pod6.jpeg",
+      "description": "Débats stimulants autour de l'art contemporain : entre profondeur émotionnelle, intellectuelle et provocation.",
+      "episodes_count": 1,
+      "followers": "3.3K"
+    },
+    {
+      "id": 7,
+      "title": "Cinéphiles ENSAD",
+      "hosts": "Ayoub Aouinzou, Ibrahim Boumahdi, Abdallah Bourhine",
+      "category": "Cinéma & Réalisation",
+      "department": "Game Design et Animation (GDA)",
+      "cover": "assets/images/pod7.jpeg",
+      "description": "Discussions et analyses cinématographiques sur les tendances, les techniques de mise en scène et la culture du 7ème art.",
+      "episodes_count": 1,
+      "followers": "3.7K"
+    },
+    {
+      "id": 8,
+      "title": "ARCADIA",
+      "hosts": "Nabil Mimouni, Soufiane Tajri, Ayoub Tourari Idrissi Hassani",
+      "category": "Jeux Vidéo & Game Design",
+      "department": "Game Design et Animation (GDA)",
+      "cover": "assets/images/pod8.jpg",
+      "description": "Immersion complète dans les coulisses de la création d'un jeu vidéo : game design, programmation et finalisation.",
+      "episodes_count": 1,
+      "followers": "4.6K"
+    },
+    {
+      "id": 9,
+      "title": "Design & Sport",
+      "hosts": "Ilyas Mazouz, Mohamed Otman, Mohamed Amine Saad",
+      "category": "Culture Visuelle & Sport",
+      "department": "Design Graphique et Interactif (DGI)",
+      "cover": "assets/images/pod.png",
+      "description": "Quand l'art et le football se rencontrent : design des maillots, tifos de supporters, architecture de stades et mangas.",
+      "episodes_count": 1,
+      "followers": "3.1K"
+    },
+    {
+      "id": 10,
+      "title": "Gaming Culture Maroc",
+      "hosts": "Oumaima Fanine, Salma Kharfi, Hidaya Saf, Imad Thaybel",
+      "category": "Jeux Vidéo & Société",
+      "department": "Game Design et Animation (GDA)",
+      "cover": "assets/images/pod9.jpeg",
+      "description": "Exploration de l'écosystème vidéoludique au Maroc, identité culturelle et défis des créateurs locaux face à l'international.",
+      "episodes_count": 1,
+      "followers": "3.5K"
+    },
+    {
+      "id": 11,
+      "title": "Backstage Pro",
+      "hosts": "Ibrahim Flaiki, Hamza Houach, Soufian Abouelaaz",
+      "category": "Carrière & Stages",
+      "department": "Design Graphique & GDA",
+      "cover": "assets/images/pod10.png",
+      "description": "Retour d'expérience sincère sur les stages, l'insertion professionnelle et les défis quotidiens en design et programmation.",
+      "episodes_count": 1,
+      "followers": "4.0K"
+    }
+  ],
+  "episodes": [
+    {
+      "id": 1,
+      "ep_number": "EP. 01",
+      "podcast_id": 1,
+      "podcast_title": "Provoc'Art",
+      "podcast_category": "Art & Performance",
+      "title": "L'œuvre 'Shoot' de Chris Burden",
+      "host": "Aya Moussa",
+      "contributors": [
+        "Aya Moussa",
+        "Nada yebda",
+        "Abdenasser Erraji"
+      ],
+      "department": "DENSAD Bac+5 — Design Graphique & Interactif (DGI)",
+      "encadrement": "Madame Randa El Amraoui (Module de Français)",
+      "cover": "assets/images/pod1.jpg",
+      "youtube_id": "U3vvD-Kx3_A",
+      "youtube_url": "https://www.youtube.com/watch?v=U3vvD-Kx3_A&list=PLOwkg6-orRsnzunguLL3UBBADLfkZUWhJ&index=1",
+      "duration": "06:12",
+      "duration_seconds": 372,
+      "plays": 2480,
+      "date": "Semestre 2 — 2025/2026",
+      "description": "Le podcast Provoc'Art explore les performances artistiques extrêmes qui repoussent les limites de l'art et du corps. L'épisode se concentre sur l'œuvre 'Shoot' de Chris Burden, une performance radicale de 1971 où l'artiste se fait tirer dessus volontairement pour interroger la perception de la violence et du spectacle. C'est une discussion entre trois personnes sur la manière dont l'art peut choquer et déranger, mais aussi pousser à la réflexion. Elles parlent de 'Shoot' dans son contexte historique, marqué par la guerre du Vietnam et la surmédiatisation de la violence, et questionnent son statut artistique. Certains y voient une critique de la brutalité de l'époque, d'autres une simple provocation. L'épisode conclut en posant la question essentielle : une performance aussi extrême peut-elle être considérée comme de l'art ? La réponse reste ouverte, mais l'impact de l'œuvre réside dans sa capacité à provoquer une réflexion profonde, au-delà du choc initial.",
+      "show_notes": "### Points clés abordés dans cet épisode :\n- **Genèse de la performance de 1971 :** Contexte de la guerre du Vietnam et remise en question du rôle de l'artiste.\n- **Violence et surmédiatisation :** Quand le corps de l'artiste devient le support critique du message.\n- **Statut artistique :** Une performance extrême est-elle encore de l'art ou un simple acte de provocation ?\n- **Débat ouvert :** Analyse des réactions du public et impact sur l'histoire de l'art contemporain.",
+      "chapters": [
+        {
+          "time": "00:00",
+          "seconds": 0,
+          "title": "Introduction de Provoc'Art & présentation de 'Shoot'"
+        },
+        {
+          "time": "01:25",
+          "seconds": 85,
+          "title": "Le contexte de 1971 et la guerre du Vietnam"
+        },
+        {
+          "time": "03:10",
+          "seconds": 190,
+          "title": "Le débat : Art radical ou simple provocation ?"
+        },
+        {
+          "time": "04:55",
+          "seconds": 295,
+          "title": "Conclusion et portée de l'œuvre"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "ep_number": "EP. 02",
+      "podcast_id": 2,
+      "podcast_title": "Art.exe",
+      "podcast_category": "IA & Création",
+      "title": "Art 2.0 : L'IA outil créatif ou menace ?",
+      "host": "Nouhaila Yahyaoui",
+      "contributors": [
+        "Nouhaila Yahyaoui",
+        "Lamyae Chaibate",
+        "Imane Charki",
+        "Islame Saadaoui",
+        "Rihab Benchekroun"
+      ],
+      "department": "DENSAD Bac+5 — Design Graphique & Interactif (DGI)",
+      "encadrement": "Madame Randa El Amraoui (Module de Français)",
+      "cover": "assets/images/pod2.jpg",
+      "youtube_id": "CBif5ouIXAg",
+      "youtube_url": "https://www.youtube.com/watch?v=CBif5ouIXAg",
+      "duration": "10:29",
+      "duration_seconds": 629,
+      "plays": 3120,
+      "date": "Semestre 2 — 2025/2026",
+      "description": "Art.exe - le podcast qui explore les liens entre art et technologie. Dans cet épisode, nous débattons d'une question brûlante : l'IA est-elle un simple outil créatif ou une menace pour les artistes ? Capable de générer des images, imiter des styles et composer de la musique en quelques secondes, l'intelligence artificielle fascine autant qu'elle inquiète. Permet-elle d'explorer de nouvelles formes d'art ou risque-t-elle de vider la création de son âme et de son émotion ? Entre opportunités et craintes, nous confrontons nos points de vue sur l'impact de l'IA dans l'art et son avenir.",
+      "show_notes": "### Points clés abordés dans cet épisode :\n- **L'essor des modèles génératifs :** Midjourney, DALL-E, Stable Diffusion dans le quotidien des designers.\n- **L'âme de l'œuvre d'art :** La machine peut-elle transmettre une véritable émotion ou seulement un assemblage de données ?\n- **Menace sur l'emploi vs Nouveau médium créatif :** Comment les étudiants de l'ENSAD appréhendent leur futur métier.\n- **Éthique et droits d'auteur :** Qui est l'auteur d'une image générée par invite ?",
+      "chapters": [
+        {
+          "time": "00:00",
+          "seconds": 0,
+          "title": "Ouverture d'Art.exe & État des lieux de l'IA générative"
+        },
+        {
+          "time": "02:40",
+          "seconds": 160,
+          "title": "L'émotion humaine face aux algorithmes"
+        },
+        {
+          "time": "06:15",
+          "seconds": 375,
+          "title": "Opportunités vs Craintes pour les graphistes émergents"
+        },
+        {
+          "time": "08:45",
+          "seconds": 525,
+          "title": "Conclusion : Vers une co-création humain-machine"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "ep_number": "EP. 03",
+      "podcast_id": 3,
+      "podcast_title": "CTRL+Z",
+      "podcast_category": "Orientation & Vie Étudiante",
+      "title": "CTRL+Z Nouvelle voie nouvelle vie",
+      "host": "Asmae Badaoui",
+      "contributors": [
+        "Asmae Badaoui",
+        "Kenza Mohcine",
+        "Manar Jebylou",
+        "Hamza Jabri",
+        "Islam moutib"
+      ],
+      "department": "DENSAD Bac+5 — Design Graphique & Interactif (DGI)",
+      "encadrement": "Madame Randa El Amraoui (Module de Français)",
+      "cover": "assets/images/pod3.png",
+      "youtube_id": "CBif5ouIXAg",
+      "youtube_url": "https://www.youtube.com/playlist?list=PLOwkg6-orRsnzunguLL3UBBADLfkZUWhJ",
+      "duration": "10:29",
+      "duration_seconds": 629,
+      "plays": 2890,
+      "date": "Semestre 2 — 2025/2026",
+      "description": "Dans ce podcast, on débat sans filtre sur la vie après le bac au Maroc : orientation, réorientation, indépendance et insertion pro. Comment choisir un nouveau domaine d'études ? Quels défis rencontrer en vivant seul ? À travers nos propres expériences, comme passer de domaines comme l'informatique au design graphique ou intégrer l'ENSAD, on partage nos galères, nos réussites et nos conseils pour mieux s'orienter. Un échange authentique pour tous ceux qui se cherchent encore après le bac !",
+      "show_notes": "### Points clés abordés dans cet épisode :\n- **Le choc de l'après-Bac au Maroc :** Pression familiale, doutes et choix de filière.\n- **La réorientation vers les arts & design :** Oser bifurquer de l'informatique ou de l'économie vers l'ENSAD.\n- **L'apprentissage de l'indépendance :** Vivre loin de chez soi à Mohammedia, gérer son budget et son temps d'atelier.\n- **Conseils pratiques :** Écouter ses passions et construire un portfolio solide.",
+      "chapters": [
+        {
+          "time": "00:00",
+          "seconds": 0,
+          "title": "Bienvenue sur CTRL+Z : Pourquoi ce nom ?"
+        },
+        {
+          "time": "02:30",
+          "seconds": 150,
+          "title": "Parcours et déclics de réorientation vers l'ENSAD"
+        },
+        {
+          "time": "05:45",
+          "seconds": 345,
+          "title": "Le quotidien d'étudiant indépendant à Mohammedia"
+        },
+        {
+          "time": "08:30",
+          "seconds": 510,
+          "title": "Messages d'encouragement aux bacheliers"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "ep_number": "EP. 04",
+      "podcast_id": 4,
+      "podcast_title": "Design & Métier",
+      "podcast_category": "Design Graphique",
+      "title": "Le Design Graphique au Maroc : Défis et Opportunités",
+      "host": "Ibrahim Khafifi",
+      "contributors": [
+        "Somayya Sgrat",
+        "Walid Zyati",
+        "Edem Stephane Teteh",
+        "El Aissati Rania",
+        "Khafifi Ibrahim"
+      ],
+      "department": "DENSAD Bac+5 — Design Graphique & Interactif (DGI)",
+      "encadrement": "Madame Randa El Amraoui (Module de Français)",
+      "cover": "assets/images/pod4.jpeg",
+      "youtube_id": "SYTTaS7QRF8",
+      "youtube_url": "https://www.youtube.com/watch?v=SYTTaS7QRF8&list=PLOwkg6-orRsnzunguLL3UBBADLfkZUWhJ&index=4",
+      "duration": "12:54",
+      "duration_seconds": 774,
+      "plays": 4150,
+      "date": "Semestre 2 — 2025/2026",
+      "description": "Dans cet épisode, nous explorons la situation actuelle du designer graphique au Maroc avec : Ibrahim, Somaya, Walid, Edam et Rania. Ce podcast plonge dans les réalités du métier, de la formation aux choix de carrière. Nous commençons par dresser un tableau des défis et des opportunités pour les jeunes designers au Maroc. Nos invités partagent leurs expériences personnelles et leurs points de vue sur le marché du travail. Ensuite, nous discutons de la formation en design graphique, en mettant en avant le parcours à l'ENSAD et les alternatives possibles comme l'autoformation et les cours en ligne. Le podcast aborde ensuite les deux grandes possibilités d'activité: le travail en freelance et le contrat en entreprise. Nous comparons les avantages et les défis de chaque option, ainsi que l'organisation quotidienne nécessaire pour réussir dans ces deux environnements. Enfin, nous explorons l'opportunité de concilier le freelance et le contrat, une approche qui séduit de plus en plus de designers au Maroc. Un échange riche en perspectives et en conseils pratiques pour tous ceux qui s'intéressent au design graphique au Maroc.",
+      "show_notes": "### Points clés abordés dans cet épisode :\n- **Le marché du design au Maroc :** Évolution de la reconnaissance du rôle du designer graphique.\n- **ENSAD vs Autoformation :** Complémentarité entre rigueur académique et apprentissage autodidacte continu.\n- **Freelance ou Salariat en agence :** Tarification, gestion client, stabilité financière et liberté créative.\n- **Le statut d'Auto-entrepreneur :** Les démarches et conseils pour débuter sereinement au Maroc.",
+      "chapters": [
+        {
+          "time": "00:00",
+          "seconds": 0,
+          "title": "Tour de table & Présentation des intervenants"
+        },
+        {
+          "time": "03:15",
+          "seconds": 195,
+          "title": "La formation académique à l'ENSAD Mohammedia"
+        },
+        {
+          "time": "07:10",
+          "seconds": 430,
+          "title": "Dilemme : Freelance ou Contrat en entreprise ?"
+        },
+        {
+          "time": "10:20",
+          "seconds": 620,
+          "title": "Concilier les deux statuts et conclusion"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "ep_number": "EP. 05",
+      "podcast_id": 5,
+      "podcast_title": "Artefactum",
+      "podcast_category": "Art Contemporain & Culture",
+      "title": "Le tatouage, est-il une forme d'art ou simplement une mode passagère ?",
+      "host": "Amina El Baz",
+      "contributors": [
+        "El Baz Amina",
+        "El Fil Israe",
+        "Tijani housna",
+        "Kharchy Aicha"
+      ],
+      "department": "DENSAD Bac+5 — Design Graphique & Interactif (DGI)",
+      "encadrement": "Madame Randa El Amraoui (Module de Français)",
+      "cover": "assets/images/pod5.png",
+      "youtube_id": "JxxS83ro-QA",
+      "youtube_url": "https://www.youtube.com/watch?v=JxxS83ro-QA&list=PLOwkg6-orRsnzunguLL3UBBADLfkZUWhJ&index=3",
+      "duration": "18:20",
+      "duration_seconds": 1100,
+      "plays": 2780,
+      "date": "Semestre 2 — 2025/2026",
+      "description": "Artefactum explore une question qui divise : le tatouage, est-il une forme d'art ou simplement une mode passagère ? Dans ce podcast, nos animatrices et invités discutent de l'évolution du tatouage, de ses origines culturelles et de son rôle dans l'art contemporain. Chaque épisode apporte un éclairage différent sur la manière dont cette pratique est perçue dans la société et dans le monde de l'art. À travers des points de vue contrastés et des échanges francs, Artefactum nous invite à repenser ce que l'on considère comme de l'art, tout en confrontant les opinions de ceux qui le défendent et de ceux qui le rejettent.",
+      "show_notes": "### Points clés abordés dans cet épisode :\n- **Racines historiques et tribales :** Du tatouage traditionnel amazigh au phénomène pop mondial.\n- **Le corps comme toile d'expression :** Technique graphique, typographie cutanée et composition visuelle.\n- **Art légitime ou tendance éphémère :** Analyse sociologique des regards générationnels.\n- **La vision des artistes contemporains :** Entrée du tatouage dans les galeries et musées.",
+      "chapters": [
+        {
+          "time": "00:00",
+          "seconds": 0,
+          "title": "Introduction d'Artefactum : Poser la problématique"
+        },
+        {
+          "time": "04:15",
+          "seconds": 255,
+          "title": "Histoire et symbolique culturelle du tatouage"
+        },
+        {
+          "time": "10:30",
+          "seconds": 630,
+          "title": "Débat : Pratique artistique pérenne ou mode commerciale ?"
+        },
+        {
+          "time": "15:10",
+          "seconds": 910,
+          "title": "Synthèse et avis des créatrices"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "ep_number": "EP. 06",
+      "podcast_id": 6,
+      "podcast_title": "Débat d'Art",
+      "podcast_category": "Art Contemporain",
+      "title": "L'Art Contemporain : Vision artistique ou simple provocation ?",
+      "host": "Soufiane Oumbarek",
+      "contributors": [
+        "Badr eddine Ibnelghaly",
+        "Walid Ouazzani chahdi",
+        "Soufiane Oumbarek"
+      ],
+      "department": "DENSAD Bac+5 — Design Graphique & Interactif (DGI)",
+      "encadrement": "Madame Randa El Amraoui (Module de Français)",
+      "cover": "assets/images/pod6.jpeg",
+      "youtube_id": "40MVkbO6e58",
+      "youtube_url": "https://www.youtube.com/watch?v=40MVkbO6e58&list=PLOwkg6-orRsnzunguLL3UBBADLfkZUWhJ&index=1",
+      "duration": "07:55",
+      "duration_seconds": 475,
+      "plays": 3050,
+      "date": "Semestre 2 — 2025/2026",
+      "description": "Un débat stimulant autour de l'art contemporain, animé par Soufian, avec Walid qui défend sa profondeur émotionnelle et intellectuelle, et Badr qui remet en question certaines œuvres trop conceptuelles. À travers des exemples comme Kendrick Lamar ou des installations controversées, la discussion explore la frontière entre véritable démarche artistique et simple provocation. Une réflexion sur l'évolution de l'art, son rôle dans notre société, et les critères qui définissent une œuvre authentique. La musique de fond, elle aussi, a été composée par les membres du podcast, ajoutant une touche personnelle et immersive à l'expérience.",
+      "show_notes": "### Points clés abordés dans cet épisode :\n- **La querelle de l'art conceptuel :** Où se situe la frontière entre génie et escroquerie intellectuelle ?\n- **Références croisées :** De Duchamp à Kendrick Lamar, comment les artistes cassent les codes établis.\n- **La musique originale du podcast :** Production sonore 100% réalisée par les étudiants de l'équipe.\n- **Critères d'authenticité :** Qu'est-ce qui rend une œuvre mémorable et intemporelle ?",
+      "chapters": [
+        {
+          "time": "00:00",
+          "seconds": 0,
+          "title": "Présentation et mise en scène musicale originale"
+        },
+        {
+          "time": "01:45",
+          "seconds": 105,
+          "title": "Défense de la profondeur conceptuelle par Walid"
+        },
+        {
+          "time": "04:10",
+          "seconds": 250,
+          "title": "Critique de la surenchère provocationnelle par Badr"
+        },
+        {
+          "time": "06:15",
+          "seconds": 375,
+          "title": "Conclusions croisées sur l'art vivant"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "ep_number": "EP. 07",
+      "podcast_id": 7,
+      "podcast_title": "Cinéphiles ENSAD",
+      "podcast_category": "Cinéma & Réalisation",
+      "title": "Analyse du film \"Inception\"",
+      "host": "Ayoub Aouinzou",
+      "contributors": [
+        "Ayoub Aouinzou",
+        "Ibrahim Boumahdi",
+        "Abdallah Bourhine"
+      ],
+      "department": "DENSAD Bac+5 — Game Design & Animation (GDA)",
+      "encadrement": "Madame Randa El Amraoui (Module de Français)",
+      "cover": "assets/images/pod7.jpeg",
+      "youtube_id": "ZmgpjXPiTiI",
+      "youtube_url": "https://www.youtube.com/watch?v=ZmgpjXPiTiI",
+      "duration": "10:00",
+      "duration_seconds": 600,
+      "plays": 3670,
+      "date": "Semestre 2 — 2025/2026",
+      "description": "Notre podcast explore le monde du cinéma à travers des discussions passionnantes sur les tendances, les critiques de films, les techniques de réalisation et les références culturelles. L'objectif est de rassembler une communauté de cinéphiles et d'offrir un mélange d'éducation et de divertissement.",
+      "show_notes": "### Points clés abordés dans cet épisode :\n- **La mise en scène de Christopher Nolan :** Découpage temporel, effets pratiques et architecture narrative en couches de rêves.\n- **La musique de Hans Zimmer :** Le rôle de 'Time' et des cuivres ralentis dans l'immersion sensorielle.\n- **Théories sur la toupie finale :** Analyse des indices visuels disséminés tout au long du long-métrage.\n- **Lien avec le Game Design :** Comment la structure d'Inception s'apparente aux niveaux d'un jeu vidéo complexe.",
+      "chapters": [
+        {
+          "time": "00:00",
+          "seconds": 0,
+          "title": "Introduction au chef-d'œuvre de Christopher Nolan"
+        },
+        {
+          "time": "02:20",
+          "seconds": 140,
+          "title": "Architecture des rêves et règles du scénario"
+        },
+        {
+          "time": "05:40",
+          "seconds": 340,
+          "title": "Bande originale et immersion sonore"
+        },
+        {
+          "time": "08:15",
+          "seconds": 495,
+          "title": "La fin ouverte : Réalité ou illusion ?"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "ep_number": "EP. 08",
+      "podcast_id": 8,
+      "podcast_title": "ARCADIA",
+      "podcast_category": "Jeux Vidéo & Game Design",
+      "title": "Plus Qu'une Manette (Le Processus de Création d'un Jeu Vidéo)",
+      "host": "Nabil Mimouni",
+      "contributors": [
+        "Nabil Mimouni",
+        "Soufiane Tajri",
+        "Ayoub Tourari Idrissi Hassani"
+      ],
+      "department": "DENSAD Bac+5 — Game Design & Animation (GDA)",
+      "encadrement": "Madame Randa El Amraoui (Module de Français)",
+      "cover": "assets/images/pod8.jpg",
+      "youtube_id": "FEmQgrSkWXg",
+      "youtube_url": "https://www.youtube.com/playlist?list=PLOwkg6-orRsnzunguLL3UBBADLfkZUWhJ",
+      "duration": "08:51",
+      "duration_seconds": 531,
+      "plays": 4410,
+      "date": "Semestre 2 — 2025/2026",
+      "description": "ARCADIA est un podcast qui aborde tous les aspects du monde de jeux vidéo. L'épisode «Plus Qu'une Manette» explore le processus de création d'un jeu vidéo, de l'idée initiale à la version finale. Structuré en trois phases principales, l'épisode commence par la conception, où l'invité game designer explique comment une idée naît et se transforme en concept, tout en abordant les défis créatifs, budgétaires et techniques. Ensuite, la phase de développement est détaillée par l'invité développeur, qui décrit les étapes techniques comme la programmation, la création des assets graphiques et l'intégration des sons, ainsi que les défis courants tels que les bugs et l'optimisation pour différentes plateformes. Enfin, la phase de test et finalisation est abordée, avec une explication des tests internes, des bêta-tests et des retours des joueurs, ainsi que les ajustements techniques nécessaires avant la sortie. Le podcast se conclut par un résumé des points clés et des remerciements aux invités et aux auditeurs.",
+      "show_notes": "### Points clés abordés dans cet épisode :\n- **Phase 1 : Conception & Game Design Document (GDD) :** Transformer une intuition en système de mécaniques jouables.\n- **Phase 2 : Développement & Direction Artistique :** Shaders, animations 2D/3D, audio dynamique et intégration moteur (Unity / Unreal).\n- **Phase 3 : QA Testing & Playtests :** L'importance capitale des retours joueurs pour équilibrer la courbe de difficulté.\n- **Le marché du jeu vidéo indépendant au Maroc :** Opportunités et ambitions de la filière GDA de l'ENSAD.",
+      "chapters": [
+        {
+          "time": "00:00",
+          "seconds": 0,
+          "title": "Présentation du projet ARCADIA"
+        },
+        {
+          "time": "02:10",
+          "seconds": 130,
+          "title": "Phase 1 : Du pitch initial au Game Design Document"
+        },
+        {
+          "time": "05:00",
+          "seconds": 300,
+          "title": "Phase 2 : Production technique, code et graphismes"
+        },
+        {
+          "time": "07:15",
+          "seconds": 435,
+          "title": "Phase 3 : Tests, bugs et polissage avant publication"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "ep_number": "EP. 09",
+      "podcast_id": 9,
+      "podcast_title": "Design & Sport",
+      "podcast_category": "Culture Visuelle & Sport",
+      "title": "Entre Art et Terrain",
+      "host": "Ilyas Mazouz",
+      "contributors": [
+        "MAZOUZ Ilyas",
+        "OTMAN Mohamed",
+        "SAAD Mohamed Amine"
+      ],
+      "department": "DENSAD Bac+5 — Design Graphique & Interactif (DGI)",
+      "encadrement": "Madame Randa El Amraoui (Module de Français)",
+      "cover": "assets/images/pod.png",
+      "youtube_id": "ejeP6qn2BQY",
+      "youtube_url": "https://www.youtube.com/watch?v=ejeP6qn2BQY&list=PLOwkg6-orRsnzunguLL3UBBADLfkZUWhJ",
+      "duration": "14:24",
+      "duration_seconds": 864,
+      "plays": 3520,
+      "date": "Semestre 2 — 2025/2026",
+      "description": "Dans cet épisode du podcast, l'art et le football se rencontrent à travers différentes formes d'expression. On explore l'impact de Captain Tsubasa sur la popularité du football au Japon, la manière dont le Barça de Guardiola a transformé le football en une œuvre d'art en mouvement, et le rôle du maillot en tant que symbole d'identité et d'émotion. On parle aussi du design du maillot du Japon pour la Coupe du Monde 2022, inspiré par l'art traditionnel japonais et la culture manga. Enfin, on aborde la fusion entre l'art visuel des tifos des supporters et l'architecture des stades modernes, illustrant comment le football devient un vecteur d'expression culturelle et artistique dans le monde entier.",
+      "show_notes": "### Points clés abordés dans cet épisode :\n- **Captain Tsubasa (Olive et Tom) :** Comment un manga a influencé des générations de footballeurs internationaux.\n- **Le beau jeu comme chorégraphie visuelle :** L'esthétique du tiki-taka barcelonais sous l'angle du design spatial.\n- **L'art du maillot :** Étude du maillot japonais Origami de 2022 et identité graphique des sélections.\n- **Tifos et scénographies de tribunes :** L'art populaire grandiose des supporters marocains et mondiaux.",
+      "chapters": [
+        {
+          "time": "00:00",
+          "seconds": 0,
+          "title": "Coup d'envoi : Football et culture graphique"
+        },
+        {
+          "time": "03:30",
+          "seconds": 210,
+          "title": "L'influence culturelle de Captain Tsubasa"
+        },
+        {
+          "time": "07:45",
+          "seconds": 465,
+          "title": "Design textile : Maillots emblématiques et origamis"
+        },
+        {
+          "time": "11:30",
+          "seconds": 690,
+          "title": "L'architecture des stades et l'art des tifos"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "ep_number": "EP. 10",
+      "podcast_id": 10,
+      "podcast_title": "Gaming Culture Maroc",
+      "podcast_category": "Jeux Vidéo & Société",
+      "title": "Jeux vidéo et identité marocaine : Pourquoi les jeunes préfèrent-ils l'international ?",
+      "host": "Oumaima Fanine",
+      "contributors": [
+        "Oumaima Fanine",
+        "Salma Kharfi",
+        "Hidaya Saf",
+        "Thaybel Imad"
+      ],
+      "department": "DENSAD Bac+5 — Game Design & Animation (GDA)",
+      "encadrement": "Madame Randa El Amraoui (Module de Français)",
+      "cover": "assets/images/pod9.jpeg",
+      "youtube_id": "FEmQgrSkWXg",
+      "youtube_url": "https://www.youtube.com/watch?v=FEmQgrSkWXg&list=PLOwkg6-orRsnzunguLL3UBBADLfkZUWhJ&index=1",
+      "duration": "08:51",
+      "duration_seconds": 531,
+      "plays": 3980,
+      "date": "Semestre 2 — 2025/2026",
+      "description": "Un podcast immersif explorant l'évolution des jeux vidéo au Maroc, de leur création à leur impact culturel et social. À travers des interviews et des analyses, nous découvrons les défis des créateurs locaux et la réception du gaming dans la société marocaine. Un voyage entre tradition et innovation, où le jeu vidéo devient un reflet de l'identité contemporaine.",
+      "show_notes": "### Points clés abordés dans cet épisode :\n- **Consommation vidéoludique au Maroc :** Préférence marquée pour les productions AAA internationales.\n- **Représentation culturelle dans les jeux :** Intégrer le patrimoine, la musique et les mythes marocains dans le jeu vidéo.\n- **Défis de l'industrie locale :** Financements, formation spécialisée et accès aux plateformes mondiales.\n- **La voix de la génération ENSAD :** Comment les futurs diplômés comptent changer la donne.",
+      "chapters": [
+        {
+          "time": "00:00",
+          "seconds": 0,
+          "title": "Introduction : L'engouement du gaming au Maroc"
+        },
+        {
+          "time": "02:15",
+          "seconds": 135,
+          "title": "Pourquoi le public se tourne-t-il vers l'international ?"
+        },
+        {
+          "time": "05:10",
+          "seconds": 310,
+          "title": "Les pionniers du jeu vidéo marocain"
+        },
+        {
+          "time": "07:20",
+          "seconds": 440,
+          "title": "Perspectives d'avenir et rôle de l'ENSAD"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "ep_number": "EP. 11",
+      "podcast_id": 11,
+      "podcast_title": "Backstage Pro",
+      "podcast_category": "Carrière & Stages",
+      "title": "Retour d'expérience : ce que mon stage en programmation et design m'a appris",
+      "host": "Ibrahim Flaiki",
+      "contributors": [
+        "FLAIKI Ibrahim",
+        "HOUACH HAMZA",
+        "SOUFIAN ABOUELAAZ"
+      ],
+      "department": "DENSAD Bac+5 — Design Graphique & GDA",
+      "encadrement": "Madame Randa El Amraoui (Module de Français)",
+      "cover": "assets/images/pod10.png",
+      "youtube_id": "Swnow4hzo6I",
+      "youtube_url": "https://www.youtube.com/watch?v=Swnow4hzo6I&list=PLOwkg6-orRsnzunguLL3UBBADLfkZUWhJ&index=8",
+      "duration": "04:33",
+      "duration_seconds": 273,
+      "plays": 4820,
+      "date": "Semestre 2 — 2025/2026",
+      "description": "Dans cet épisode de Backstage Pro, Ibrahim reçoit Hamza et Soufiane pour une discussion sincère autour du stage et de la première expérience professionnelle. Ensemble, ils explorent les attentes souvent idéalisées avant le début d'un stage, les surprises rencontrées sur le terrain, ainsi que les défis quotidiens à relever dans un environnement professionnel réel. À travers leurs témoignages, ils partagent les leçons apprises, l'importance de l'adaptation, de la communication et de la prise d'initiative, tout en offrant un regard lucide et humain sur cette étape clé du parcours de tout jeune professionnel.",
+      "show_notes": "### Points clés abordés dans cet épisode :\n- **Les attentes vs la réalité du terrain :** Décalage entre projets d'école et cadences en entreprise.\n- **Communication et travail d'équipe :** Savoir poser les bonnes questions et s'intégrer à une équipe multidisciplinaire.\n- **Compétences transversales (Soft skills) :** Gestion du stress, autonomie et respect des deadlines de livraison.\n- **Conseils pour décrocher son stage de fin d'études :** Soigner son book et valoriser ses projets personnels.",
+      "chapters": [
+        {
+          "time": "00:00",
+          "seconds": 0,
+          "title": "Introduction de Backstage Pro par Ibrahim"
+        },
+        {
+          "time": "01:05",
+          "seconds": 65,
+          "title": "Premiers jours en entreprise : Les surprises du terrain"
+        },
+        {
+          "time": "02:35",
+          "seconds": 155,
+          "title": "La rigueur professionnelle et la communication interne"
+        },
+        {
+          "time": "03:45",
+          "seconds": 225,
+          "title": "Bilan et précieux conseils aux futurs stagiaires"
+        }
+      ]
+    }
+  ]
+}

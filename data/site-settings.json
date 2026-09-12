@@ -1,0 +1,85 @@
+{
+    "welcome_page": {
+        "enabled": true,
+        "title": "Bienvenue sur Micro ENSAD",
+        "subtitle": "La Voix Créative de l'ENSAD Casablanca",
+        "badge_text": "EXPÉRIENCE IMMERSIVE & AUDIOVISUELLE",
+        "description": "Plongez dans l'univers créatif des étudiants et concepteurs de l'École Nationale Supérieure d'Art et de Design. Découvrez nos podcasts, réflexions et créations sonores.",
+        "video_url": "https://www.youtube.com/watch?v=ma48QB0z78E",
+        "poster_image": "assets/images/HeaderBG.png",
+        "cta_start_text": "Commencer l'expérience",
+        "allow_skip": true
+    },
+    "randa_intro": {
+        "enabled": true,
+        "name": "Mme Randa El Amraoui",
+        "role": "Responsable du Projet • Module de Français (Bac+5)",
+        "title": "Mot de Présentation du Projet",
+        "audio_url": "assets/audio/randa_intro_1789241447_podaudio.m4a",
+        "avatar_image": "assets/images/randa_avatar_1789241268_chi_1825.jpg",
+        "quote": "Bienvenue sur Micro ENSAD ! Je vous invite à découvrir les voix, les réflexions et l'énergie créative des étudiants de l'ENSAD Casablanca à travers leurs créations sonores.",
+        "show_in_welcome": true,
+        "show_in_hero": true
+    },
+    "hero": {
+        "badge_text": "LE PODCAST OFFICIEL DE L'ENSAD",
+        "title": "Micro ENSAD",
+        "subtitle": "Le Podcast des Étudiants",
+        "description": "Découvrez les réflexions, projets et créations des étudiants de l'École Nationale Supérieure d'Art et de Design de Casablanca. Une immersion sonore au cœur de la créativité.",
+        "cta_listen_text": "Écouter le dernier épisode",
+        "cta_discover_text": "Découvrir les épisodes"
+    },
+    "cta_banner": {
+        "tag_text": "PARTICIPER AU PROJET",
+        "title": "Une idée ? Un témoignage ?",
+        "subtitle": "On en parle !",
+        "description": "Vous êtes étudiant, enseignant ou intervenant à l'ENSAD Casablanca ? Rejoignez nos prochains enregistrements et partagez vos projets, expériences et visions du design contemporain.",
+        "cta_text": "Proposer un sujet",
+        "contact_email": "contact@ensad.ma",
+        "handwritten_note": "Ta voix compte !",
+        "bg_image": "assets/images/hero-mic-cinematic.jpg"
+    },
+    "social": {
+        "instagram": {
+            "url": "https://instagram.com",
+            "enabled": true,
+            "label": "Instagram Micro ENSAD"
+        },
+        "youtube": {
+            "url": "https://youtube.com/@ensad",
+            "enabled": true,
+            "label": "YouTube ENSAD"
+        },
+        "linkedin": {
+            "url": "https://linkedin.com",
+            "enabled": true,
+            "label": "LinkedIn ENSAD"
+        },
+        "spotify": {
+            "url": "https://spotify.com",
+            "enabled": true,
+            "label": "Spotify Podcast"
+        },
+        "facebook": {
+            "url": "",
+            "enabled": false,
+            "label": "Facebook ENSAD"
+        },
+        "tiktok": {
+            "url": "",
+            "enabled": false,
+            "label": "TikTok ENSAD"
+        }
+    },
+    "footer": {
+        "institution_name": "École Nationale Supérieure d'Art et de Design de Casablanca",
+        "university_name": "Université Hassan II de Casablanca",
+        "podcast_tagline": "Le Podcast des Étudiants",
+        "copyright_name": "Micro ENSAD"
+    },
+    "navbar": {
+        "brand_title": "Micro ENSAD",
+        "brand_subtitle": "Le Podcast des Étudiants",
+        "listen_btn_text": "Écouter"
+    }
+}

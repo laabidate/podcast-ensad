@@ -1,0 +1,49 @@
+﻿{
+  "name": "Micro ENSAD — Le Podcast des Étudiants",
+  "short_name": "Micro ENSAD",
+  "description": "Plateforme officielle des podcasts de l'École Nationale Supérieure d'Art et de Design de Mohammedia",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#050B14",
+  "theme_color": "#1264FF",
+  "lang": "fr",
+  "dir": "ltr",
+  "categories": ["education", "music", "entertainment"],
+  "icons": [
+    {
+      "src": "assets/images/micro-ensad-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/images/micro-ensad-icon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "assets/images/micro-ensad-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Tous les Épisodes",
+      "short_name": "Épisodes",
+      "description": "Accéder à tous les épisodes du podcast",
+      "url": "/episodes.php",
+      "icons": [{ "src": "assets/images/micro-ensad-icon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Les Podcasts",
+      "short_name": "Podcasts",
+      "description": "Parcourir tous les podcasts",
+      "url": "/podcasts.php",
+      "icons": [{ "src": "assets/images/micro-ensad-icon.svg", "sizes": "192x192" }]
+    }
+  ]
+}

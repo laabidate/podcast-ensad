@@ -1,0 +1,15 @@
+﻿User-agent: *
+Allow: /
+
+# Block private/sensitive paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /data/
+Disallow: /includes/
+Disallow: /tools/
+
+# Block query-string noise
+Disallow: /*?*enter=*
+Disallow: /*?*skip_welcome=*
+
+Sitemap: https://micro-ensad.ma/sitemap.xml

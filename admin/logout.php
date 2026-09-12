@@ -1,0 +1,9 @@
+<?php
+/**
+ * Logout — Micro ENSAD Admin
+ */
+require_once __DIR__ . '/config.php';
+session_start();
+session_destroy();
+header('Location: login.php');
+exit;

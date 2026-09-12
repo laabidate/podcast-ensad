@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" width="160" height="48" fill="none">
+    <defs>
+        <linearGradient id="gradSec" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#55A9E8" />
+            <stop offset="100%" stop-color="#1F5EAD" />
+        </linearGradient>
+    </defs>
+    <!-- Emblem Badge -->
+    <rect x="2" y="4" width="40" height="40" rx="12" fill="#F0F6FD" stroke="#1F5EAD" stroke-width="1.5" />
+    <!-- Academic/Design Emblem -->
+    <polygon points="22,12 33,18 22,24 11,18" fill="#1F5EAD" />
+    <path d="M15 21V27C15 31 22 34 22 34C22 34 29 31 29 27V21" stroke="#092A5C" stroke-width="1.8" fill="none" stroke-linecap="round" />
+    <circle cx="22" cy="23" r="2" fill="#FFE52B" />
+    <!-- Text -->
+    <text x="50" y="22" font-family="'Fredoka', 'Montserrat', sans-serif" font-weight="700" font-size="13" fill="#092A5C" letter-spacing="0.3">UNIVERSITÉ</text>
+    <text x="50" y="34" font-family="'Montserrat', sans-serif" font-weight="600" font-size="9" fill="#1F5EAD" letter-spacing="0.5">HASSAN II CASABLANCA</text>
+</svg>

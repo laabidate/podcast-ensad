@@ -180,17 +180,41 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .nav-brand-ensad-logo {
-  height: 38px;
+  height: 48px;
   width: auto;
+  max-width: 175px;
   object-fit: contain;
+  display: block;
 }
 
 .nav-brand-divider {
-  width: 1px;
-  height: 24px;
-  background: rgba(255, 255, 255, 0.15);
-  margin: 0 6px;
+  width: 1.5px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 10px;
 }
+
+/* Second logo in desktop navbar — transparent background, clear & large */
+.nav-brand-logo-secondaire {
+  height: 44px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  display: block;
+  background: transparent !important;
+  transition: filter 0.3s ease;
+}
+
+[data-bs-theme="light"] .nav-brand-divider,
+[data-theme="light"] .nav-brand-divider {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+[data-bs-theme="light"] .nav-brand-logo-secondaire,
+[data-theme="light"] .nav-brand-logo-secondaire {
+  filter: brightness(0.15);
+}
+
 
 .nav-brand-title {
   font-size: 1.05rem;
@@ -2014,49 +2038,53 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 /* Header des Deux Logos dans la Carte Story (ENSAD à gauche, UH2C à droite) */
 .qr-story-logos-header {
-  padding: 7px 12px;
-  background: rgba(5, 11, 20, 0.65);
+  padding: 10px 18px;
+  background: rgba(5, 11, 20, 0.68);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 14px;
-  min-height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  min-height: 52px;
 }
 
 .qr-story-logo-wrap {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  background: transparent !important;
 }
 
 .qr-logo-principal-box {
-  max-width: 90px;
+  max-width: 140px;
 }
 
 .qr-logo-secondaire-box {
-  background: #FFFFFF;
-  border-radius: 6px;
-  padding: 2px 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
   display: inline-flex;
   align-items: center;
 }
 
 .qr-story-logo-img {
-  height: 22px;
+  height: 36px;
   width: auto;
-  max-width: 86px;
+  max-width: 140px;
   object-fit: contain;
   display: block;
 }
 
 .qr-logo-ensad {
-  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.6));
+  height: 36px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.7));
 }
 
 .qr-logo-uh2c {
-  height: 19px;
-  max-width: 78px;
+  height: 34px;
+  max-width: 130px;
+  background: transparent !important;
 }
 
 .qr-story-center-pill {
@@ -2827,9 +2855,9 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .mobile-brand-logo {
-  height: 32px;
+  height: 42px;
   width: auto;
-  max-width: 135px;
+  max-width: 160px;
   object-fit: contain;
   display: block;
 }
@@ -2847,29 +2875,39 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   filter: brightness(0.12);
 }
 
-/* Logo Secondaire (Université Hassan II) : Badge soigné et contrasté */
+/* Logo Secondaire (Université Hassan II) : 100% Transparent, grand et net */
 .mobile-logo-secondaire-box {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 9px;
-  padding: 2.5px 7px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s ease, border-color 0.3s ease;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
 }
 
 [data-bs-theme="light"] .mobile-logo-secondaire-box,
 [data-theme="light"] .mobile-logo-secondaire-box {
-  background: rgba(240, 246, 253, 0.96);
-  border-color: rgba(31, 94, 173, 0.25);
-  box-shadow: 0 2px 8px rgba(31, 94, 173, 0.08);
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .mobile-logo-secondaire {
-  height: 26px;
-  max-width: 120px;
+  height: 40px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  display: block;
+  background: transparent !important;
+  transition: filter 0.3s ease;
+}
+
+/* En mode clair, adapter la luminosité pour un contraste parfait sur fond clair */
+[data-bs-theme="light"] .mobile-logo-secondaire,
+[data-theme="light"] .mobile-logo-secondaire {
+  filter: brightness(0.15);
 }
 
 /* Badge Central Micro ENSAD */
@@ -3539,15 +3577,18 @@ button, a, input[type="range"], .btn-nav-icon, .btn-player-dock {
     display: none !important;
   }
   .mobile-brand-logo {
-    height: 28px !important;
-    max-width: 110px !important;
+    height: 36px !important;
+    max-width: 130px !important;
   }
   .mobile-logo-secondaire {
-    height: 23px !important;
-    max-width: 100px !important;
+    height: 34px !important;
+    max-width: 120px !important;
   }
   .mobile-logo-secondaire-box {
-    padding: 2px 5px !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
   }
 
   /* Navbar */

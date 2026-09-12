@@ -575,7 +575,7 @@ async function downloadStoryCardPng(epData) {
         // Logo 1 (Gauche) : ENSAD Casablanca
         if (logoPrincImg && logoPrincImg.width > 0) {
             ctx.save();
-            const lH = 64;
+            const lH = 68;
             const lW = (logoPrincImg.width / logoPrincImg.height) * lH;
             ctx.drawImage(logoPrincImg, 95, headerY + (headerH - lH) / 2, lW, lH);
             ctx.restore();
@@ -587,29 +587,18 @@ async function downloadStoryCardPng(epData) {
             ctx.restore();
         }
 
-        // Logo 2 (Droite) : Université Hassan II Casablanca (Seulement les 2 logos, sans badge central)
+        // Logo 2 (Droite) : Université Hassan II Casablanca (100% Transparent, grand et net sans boîte blanche)
         if (logoSecImg && logoSecImg.width > 0) {
             ctx.save();
-            const sH = 54;
+            const sH = 64;
             const sW = (logoSecImg.width / logoSecImg.height) * sH;
-            const sBoxW = sW + 28;
-            const sBoxH = 72;
-            const sBoxX = W - 95 - sBoxW;
-            const sBoxY = headerY + (headerH - sBoxH) / 2;
-
-            // Boîte blanche satinée pour le logo secondaire (garantit un contraste parfait)
-            drawRoundedRect(ctx, sBoxX, sBoxY, sBoxW, sBoxH, 16);
-            ctx.fillStyle = '#FFFFFF';
-            ctx.fill();
-            ctx.strokeStyle = 'rgba(31, 94, 173, 0.25)';
-            ctx.lineWidth = 1.5;
-            ctx.stroke();
-
-            ctx.drawImage(logoSecImg, sBoxX + 14, sBoxY + (sBoxH - sH) / 2, sW, sH);
+            const sX = W - 95 - sW;
+            const sY = headerY + (headerH - sH) / 2;
+            ctx.drawImage(logoSecImg, sX, sY, sW, sH);
             ctx.restore();
         } else {
             ctx.save();
-            ctx.font = 'bold 22px "Montserrat", sans-serif';
+            ctx.font = 'bold 24px "Montserrat", sans-serif';
             ctx.fillStyle = '#FFFFFF';
             ctx.textAlign = 'right';
             ctx.fillText('UH2C', W - 95, headerY + 65);

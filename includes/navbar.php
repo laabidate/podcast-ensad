@@ -18,11 +18,6 @@
             <?php endif; ?>
         </a>
 
-        <!-- 2. Badge Central Micro ENSAD -->
-        <div class="mobile-brand-center-pill">
-            <span class="mobile-brand-mic-icon">🎙️</span>
-            <span class="mobile-brand-center-text font-heading fw-bold">Micro <span class="text-electric-blue">ENSAD</span></span>
-        </div>
 
         <!-- 3. Logo Secondaire (Droite) : Université Hassan II Casablanca -->
         <a href="index.php" class="mobile-brand-link mobile-brand-right" title="Université Hassan II de Casablanca">
@@ -40,20 +35,24 @@
 <nav class="navbar navbar-expand-lg navbar-cinematic-top sticky-top" id="siteNavbar">
     <div class="container-xl">
 
-        <!-- 1. IDENTITÉ ENSAD & MICRO ENSAD (Gauche) -->
+        <!-- 1. IDENTITÉ : DEUX LOGOS OFFICIELS (Gauche) -->
         <div class="d-flex align-items-center gap-3">
-            <a href="index.php" class="d-flex align-items-center gap-2 text-decoration-none" title="ENSAD Casablanca • Université Hassan II">
+            <a href="index.php" class="d-flex align-items-center gap-3 text-decoration-none" title="ENSAD Mohammedia • Université Hassan II">
+                <!-- Logo Principal : ENSAD -->
                 <?php if (file_exists(__DIR__ . '/../assets/images/logo-principal.svg')): ?>
                     <img src="assets/images/logo-principal.svg?v=<?= filemtime(__DIR__ . '/../assets/images/logo-principal.svg') ?>" alt="Logo ENSAD" class="nav-brand-ensad-logo">
                 <?php else: ?>
                     <img src="assets/images/ensad-logo-white.png" alt="Logo Officiel ENSAD" class="nav-brand-ensad-logo d-theme-dark-only">
                     <img src="assets/images/ensad-logo-navy.png" alt="Logo Officiel ENSAD" class="nav-brand-ensad-logo d-theme-light-only">
                 <?php endif; ?>
+
+                <!-- Séparateur fin -->
                 <span class="nav-brand-divider" aria-hidden="true"></span>
-                <div class="d-flex flex-column lh-sm">
-                    <span class="nav-brand-title font-heading fw-bold">Micro <span class="text-electric-blue">ENSAD</span></span>
-                    <span class="nav-brand-subtitle text-muted">Le Podcast des Étudiants</span>
-                </div>
+
+                <!-- Logo Secondaire : Université Hassan II -->
+                <?php if (file_exists(__DIR__ . '/../assets/images/logo-secondaire.svg')): ?>
+                    <img src="assets/images/logo-secondaire.svg?v=<?= filemtime(__DIR__ . '/../assets/images/logo-secondaire.svg') ?>" alt="Université Hassan II Casablanca" class="nav-brand-logo-secondaire">
+                <?php endif; ?>
             </a>
         </div>
 

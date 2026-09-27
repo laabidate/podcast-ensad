@@ -23,6 +23,7 @@ class EnsadPodcastEngine {
         this.currentSpeed = 1.0;
         this.currentChapters = [];
         this.renderedDuration = 0;
+        this.pendingYouTubeTrack = null;
 
         // ── 1. ÉLÉMENTS DU LECTEUR DESKTOP ──
         this.playerBar = document.getElementById('ensadPlayerBar');
@@ -147,9 +148,22 @@ class EnsadPodcastEngine {
                         this.isYtReady = true;
                         const defaultVol = this.volumeSlider ? parseInt(this.volumeSlider.value, 10) : 85;
                         this.setVolumeLevel(defaultVol);
-                        this.restoreState();
+                        if (this.pendingYouTubeTrack) {
+                            const pending = this.pendingYouTubeTrack;
+                            this.pendingYouTubeTrack = null;
+                            this.startYouTubePlayback(pending.youtubeId, pending.startAt || 0);
+                        } else {
+                            this.restoreState();
+                        }
                     },
-                    'onStateChange': (event) => this.onPlayerStateChange(event)
+                    'onStateChange': (event) => this.onPlayerStateChange(event),
+                    'onError': () => {
+                        this.pendingYouTubeTrack = null;
+                        this.setPlayState(false);
+                        if (typeof showToast === 'function') {
+                            showToast("Lecture YouTube indisponible pour cet episode.");
+                        }
+                    }
                 }
             });
         };
@@ -732,36 +746,36 @@ class EnsadPodcastEngine {
     }
 
     bindPageButtons() {
-        document.querySelectorAll('[data-play-episode]').forEach(btn => {
-            btn.addEventListener('click', (e) => {
+        document.addEventListener('click', (e) => {
+            const playBtn = e.target.closest('[data-play-episode]');
+            if (playBtn) {
                 e.preventDefault();
+                const startAt = parseInt(playBtn.dataset.chapterSeconds || playBtn.dataset.seekTime || '0', 10) || 0;
                 const trackData = {
-                    id: btn.dataset.episodeId,
-                    title: btn.dataset.title,
-                    host: btn.dataset.host,
-                    podcast: btn.dataset.podcast || 'Micro ENSAD',
-                    cover: btn.dataset.cover,
-                    youtubeId: btn.dataset.youtubeId,
-                    audioUrl: btn.dataset.audioUrl,
-                    duration: btn.dataset.duration || '04:33'
+                    id: playBtn.dataset.episodeId,
+                    title: playBtn.dataset.title,
+                    host: playBtn.dataset.host,
+                    podcast: playBtn.dataset.podcast || 'Micro ENSAD',
+                    cover: playBtn.dataset.cover,
+                    youtubeId: playBtn.dataset.youtubeId,
+                    audioUrl: playBtn.dataset.audioUrl,
+                    duration: playBtn.dataset.duration || '00:00'
                 };
-                this.loadAndPlay(trackData);
-            });
-        });
+                this.loadAndPlay(trackData, startAt);
+                return;
+            }
 
-        // Chapitres cliquables sur la page
-        document.querySelectorAll('[data-chapter-seconds], [data-seek-time]').forEach(el => {
-            el.addEventListener('click', (e) => {
-                const seconds = parseInt(el.dataset.chapterSeconds || el.dataset.seekTime, 10);
-                if (!isNaN(seconds)) {
-                    this.seekTo(seconds);
-                }
-            });
+            const seekBtn = e.target.closest('[data-chapter-seconds], [data-seek-time]');
+            if (!seekBtn) return;
+            const seconds = parseInt(seekBtn.dataset.chapterSeconds || seekBtn.dataset.seekTime, 10);
+            if (!isNaN(seconds)) {
+                this.seekTo(seconds);
+            }
         });
     }
 
-    loadAndPlay(track) {
-        if (this.currentTrack && String(this.currentTrack.id) === String(track.id)) {
+    loadAndPlay(track, startAt = 0) {
+        if (this.currentTrack && String(this.currentTrack.id) === String(track.id) && startAt <= 0) {
             this.togglePlay();
             return;
         }
@@ -843,15 +857,34 @@ class EnsadPodcastEngine {
         if (ytId && this.isYtReady && this.ytPlayer) {
             this.useYouTube = true;
             this.html5Audio.pause();
-            this.ytPlayer.loadVideoById(ytId);
-            this.setPlayState(true);
-            this.startTimer();
-        } else {
+            this.startYouTubePlayback(ytId, startAt);
+        } else if (ytId) {
+            this.useYouTube = true;
+            this.pendingYouTubeTrack = { youtubeId: ytId, startAt };
+            this.setPlayState(false);
+            if (typeof showToast === 'function') {
+                showToast("Preparation du lecteur YouTube...");
+            }
+        } else if (track.audioUrl) {
             this.useYouTube = false;
             if (this.isYtReady && this.ytPlayer) this.ytPlayer.pauseVideo();
-            this.html5Audio.src = track.audioUrl || 'https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg';
+            this.html5Audio.src = track.audioUrl;
             this.html5Audio.play().then(() => this.setPlayState(true)).catch(() => {});
+        } else {
+            this.setPlayState(false);
+            if (typeof showToast === 'function') {
+                showToast("Aucune source audio disponible pour cet episode.");
+            }
         }
+    }
+
+    startYouTubePlayback(ytId, startAt = 0) {
+        if (!ytId || !this.isYtReady || !this.ytPlayer) return;
+        this.useYouTube = true;
+        this.html5Audio.pause();
+        this.ytPlayer.loadVideoById({ videoId: ytId, startSeconds: Math.max(0, startAt || 0) });
+        this.setPlayState(true);
+        this.startTimer();
     }
 
     togglePlay() {

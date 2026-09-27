@@ -44,13 +44,13 @@ if (!isset($activeNav)) {
             <span class="mobile-tab-label">Recherche</span>
         </button>
 
-        <!-- 4. Catégories / Thématiques -->
-        <a href="index.php#thematiques-section" class="mobile-app-tab <?= ($activeNav === 'categories') ? 'active' : '' ?>" id="tabMobileCategories" aria-label="Catégories">
+        <!-- 4. Podcasts / emissions -->
+        <a href="podcasts.php" class="mobile-app-tab <?= ($activeNav === 'podcasts') ? 'active' : '' ?>" id="tabMobileCategories" aria-label="Podcasts">
             <div class="mobile-tab-icon-wrap">
-                <span class="material-symbols-rounded mobile-tab-icon">grid_view</span>
+                <span class="material-symbols-rounded mobile-tab-icon">library_music</span>
                 <span class="mobile-tab-glow"></span>
             </div>
-            <span class="mobile-tab-label">Catégories</span>
+            <span class="mobile-tab-label">Podcasts</span>
         </a>
 
         <!-- 5. Thème (Bascule Mode Clair / Sombre en bas) -->

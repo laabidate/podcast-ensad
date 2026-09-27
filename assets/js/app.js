@@ -18,6 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
     initEpisodeModal();
 });
 
+function isStaticPage() {
+    return /\.html(?:$|[?#])/.test(window.location.pathname);
+}
+
+function episodeDetailUrl(id) {
+    return isStaticPage() ? `episode-${encodeURIComponent(id)}.html` : `episode-detail.php?id=${encodeURIComponent(id)}`;
+}
+
+function podcastDetailUrl(id) {
+    return isStaticPage() ? `podcast-${encodeURIComponent(id)}.html` : `podcast-detail.php?id=${encodeURIComponent(id)}`;
+}
+
 /* ==========================================================
    1. GESTION DU THÈME (DARK / LIGHT MODE)
    ========================================================== */
@@ -410,7 +422,7 @@ function openQrShareModal(epData) {
     if (deptEl)  deptEl.textContent = epData.department || 'Cycle Bac+5 (DENSAD) • DGI / GDA';
 
     // Lien complet direct vers l'épisode
-    const fullUrl = window.location.origin + '/episode-detail.php?id=' + epData.id;
+    const fullUrl = new URL(episodeDetailUrl(epData.id), window.location.href).href;
     if (urlInput) urlInput.value = fullUrl;
 
     // Liens Réseaux Sociaux
@@ -975,7 +987,7 @@ function populateModal(ep) {
     // Lien « Fiche complète »
     const detailLink = document.getElementById('modalDetailLink');
     if (detailLink) {
-        detailLink.href = ep.id ? `episode-detail.php?id=${ep.id}` : '#';
+        detailLink.href = ep.id ? episodeDetailUrl(ep.id) : '#';
     }
 
     // Bouton « Partager / QR » dans la modale
@@ -1029,4 +1041,3 @@ function escapeHtml(str) {
 // Exposer globalement pour le lecteur audio et les déclencheurs
 window.openQrShareModal = openQrShareModal;
 window.downloadStoryCardPng = downloadStoryCardPng;
-

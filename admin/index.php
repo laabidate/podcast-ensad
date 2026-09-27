@@ -68,7 +68,7 @@ require_once __DIR__ . '/layout-header.php';
                 <i class="bi bi-people-fill" style="color:#7c3aed;"></i>
             </div>
             <div>
-                <div class="stat-num"><?= count(array_unique(array_merge(...array_map(fn($e) => $e['contributors'] ?? [], $episodes)))) ?></div>
+                <div class="stat-num"><?= count(array_unique($contributors)) ?></div>
                 <div class="stat-label">Étudiants contributeurs</div>
             </div>
         </div>

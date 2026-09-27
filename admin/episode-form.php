@@ -30,6 +30,7 @@ $activeNav = 'add';
 
 // Catégories disponibles (depuis les podcasts existants)
 $cats = array_unique(array_filter(array_column($podcasts, 'category')));
+$selectedPodcastId = (int)($ep['podcast_id'] ?? ($podcasts[0]['id'] ?? 0));
 
 require_once __DIR__ . '/layout-header.php';
 ?>
@@ -106,13 +107,27 @@ require_once __DIR__ . '/layout-header.php';
                     <i class="bi bi-broadcast text-primary"></i> Émission & Catégorie
                 </div>
                 <div class="row g-3">
-                    <div class="col-sm-6">
-                        <label class="form-label">Nom de l'émission <span class="text-danger">*</span></label>
+                    <div class="col-12">
+                        <label class="form-label">Emission / Podcast <span class="text-danger">*</span></label>
+                        <select name="podcast_id" class="form-select" required>
+                            <option value="">-- Selectionner une emission --</option>
+                            <?php foreach ($podcasts as $podcast): ?>
+                                <option value="<?= (int)$podcast['id'] ?>" <?= $selectedPodcastId === (int)$podcast['id'] ? 'selected' : '' ?>>
+                                    <?= esc($podcast['title'] ?? '') ?> - <?= esc($podcast['category'] ?? '') ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                        <div class="form-hint">
+                            Les emissions se gerent depuis la page <a href="podcast-form.php">Ajouter une emission</a>.
+                        </div>
+                    </div>
+                    <div class="col-sm-6 d-none">
+                        <label class="form-label">Nom de l'emission</label>
                         <input type="text" name="podcast_title" class="form-control"
                                value="<?= esc($ep['podcast_title'] ?? '') ?>"
-                               placeholder="Ex : Art.exe" required>
+                               placeholder="Ex : Art.exe">
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 d-none">
                         <label class="form-label">Catégorie / Thématique</label>
                         <input type="text" name="podcast_category" class="form-control"
                                list="catList"

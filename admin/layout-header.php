@@ -47,6 +47,15 @@
             <i class="bi bi-collection-play"></i> Gérer les épisodes
         </a>
 
+        <div class="sidebar-section-label">Emissions</div>
+
+        <a href="podcasts-admin.php" class="sidebar-link <?= ($activeNav === 'podcasts') ? 'active' : '' ?>">
+            <i class="bi bi-broadcast-pin"></i> Gerer les emissions
+        </a>
+        <a href="podcast-form.php" class="sidebar-link <?= ($activeNav === 'podcast-add') ? 'active' : '' ?>">
+            <i class="bi bi-plus-square"></i> Ajouter une emission
+        </a>
+
         <div class="sidebar-section-label">Identité & Médias</div>
 
         <a href="logos.php" class="sidebar-link <?= ($activeNav === 'logos') ? 'active' : '' ?>">

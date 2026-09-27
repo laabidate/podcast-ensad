@@ -96,7 +96,7 @@ function getPodcastById($id): ?array {
  */
 function getFeaturedPodcast(): ?array {
     $podcasts = getAllPodcasts();
-    return !empty($podcasts) ? $podcasts[0] : null;
+    return !empty($podcasts) ? end($podcasts) : null;
 }
 
 /**
@@ -136,6 +136,26 @@ function getEpisodes(?int $limit = null, $podcastId = null, ?string $category = 
     // Ré-indexer les clés
     $episodes = array_values($episodes);
 
+    if ($status === 'published') {
+        $episodes = array_values(array_filter($episodes, fn($e) => !empty($e['youtube_id']) || !empty($e['audio_url'])));
+    }
+
+    switch ($orderBy) {
+        case 'popular':
+            usort($episodes, fn($a, $b) => (int)($b['plays'] ?? 0) <=> (int)($a['plays'] ?? 0));
+            break;
+        case 'duration':
+            usort($episodes, fn($a, $b) => (int)($b['duration_seconds'] ?? 0) <=> (int)($a['duration_seconds'] ?? 0));
+            break;
+        case 'oldest':
+            usort($episodes, fn($a, $b) => (int)($a['id'] ?? 0) <=> (int)($b['id'] ?? 0));
+            break;
+        case 'recent':
+        default:
+            usort($episodes, fn($a, $b) => (int)($b['id'] ?? 0) <=> (int)($a['id'] ?? 0));
+            break;
+    }
+
     if ($limit !== null && $limit > 0) {
         $episodes = array_slice($episodes, 0, $limit);
     }
@@ -172,16 +192,26 @@ function getStats(): array {
     $totalPodcasts = count($data['podcasts'] ?? []);
     $totalEpisodes = count($data['episodes'] ?? []);
     $plays = 0;
+    $seconds = 0;
     foreach ($data['episodes'] ?? [] as $ep) {
         $plays += ($ep['plays'] ?? 0);
+        $seconds += (int)($ep['duration_seconds'] ?? 0);
     }
 
     return [
-        'podcasts' => max($totalPodcasts, 6),
-        'episodes' => max($totalEpisodes, 6),
-        'plays'    => max($plays, 14850),
-        'hours'    => 38
+        'podcasts' => $totalPodcasts,
+        'episodes' => $totalEpisodes,
+        'plays'    => $plays,
+        'hours'    => (int)ceil($seconds / 3600)
     ];
+}
+
+function episodeUrl($id): string {
+    return 'episode-detail.php?id=' . urlencode((string)$id);
+}
+
+function podcastUrl($id): string {
+    return 'podcast-detail.php?id=' . urlencode((string)$id);
 }
 
 /**

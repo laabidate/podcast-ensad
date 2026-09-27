@@ -28,6 +28,7 @@ ehthumbs.db
 
 # === Security — NEVER commit these ===
 data/admin_*.json
+data/backups/
 
 # === Dev tools ===
 .claude-replay.*

@@ -13,7 +13,7 @@ $activeNav = 'home';
 // Données statiques officielles
 $allEpisodes = getEpisodes();
 // Épisode à la une : Épisode #11 (ou le plus récent)
-$featuredEpisode = !empty($allEpisodes) ? $allEpisodes[count($allEpisodes) - 1] : null;
+$featuredEpisode = !empty($allEpisodes) ? $allEpisodes[0] : null;
 $institution = getInstitution();
 $categories = getCategories();
 $stats = getStats();

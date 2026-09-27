@@ -32,7 +32,7 @@
     </div>
 </header>
 
-<nav class="navbar navbar-expand-lg navbar-cinematic-top sticky-top" id="siteNavbar">
+<nav class="navbar navbar-expand-md navbar-cinematic-top sticky-top" id="siteNavbar">
     <div class="container-xl">
 
         <!-- 1. IDENTITÉ : DEUX LOGOS OFFICIELS (Gauche) -->
@@ -67,6 +67,11 @@
                 <li class="nav-item">
                     <a class="nav-link-cinematic <?= ($activeNav === 'episodes') ? 'active' : '' ?>" href="episodes.php">
                         <span>Épisodes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link-cinematic <?= ($activeNav === 'podcasts') ? 'active' : '' ?>" href="podcasts.php">
+                        <span>Podcasts</span>
                     </a>
                 </li>
                 <li class="nav-item">

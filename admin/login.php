@@ -3,6 +3,7 @@
  * Admin Login — Micro ENSAD Mohammedia
  */
 require_once __DIR__ . '/config.php';
+adminRequireLocal();
 session_start();
 
 // Déjà connecté → dashboard
@@ -17,6 +18,7 @@ $expired = isset($_GET['expired']);
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $pass = $_POST['password'] ?? '';
     if ($pass === ADMIN_PASSWORD) {
+        session_regenerate_id(true);
         $_SESSION['admin_logged_in']  = true;
         $_SESSION['admin_login_time'] = time();
         header('Location: index.php');
